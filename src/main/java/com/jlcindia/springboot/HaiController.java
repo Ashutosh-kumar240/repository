@@ -10,8 +10,9 @@ public class HaiController {
 	@GetMapping(value="/myhai/{name}") 
 	public Hai getMessage(@PathVariable String name) { 
 	System.out.println("HaiController - getMessage()"); 
-	Hai hai =new Hai(901,name, "Hai Guys !!!" ); 
-	return hai; 
+	Hai hai =new Hai(901,name, "Hai Guys !!!" );
+	Hai hai1 =new Hai(904,name, "Hai Ashuuu !!!" ); 
+	return hai1; 
 	} 
 	
 }
